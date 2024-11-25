@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="ong_app"
+        android:label="Mundo Melhor"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
