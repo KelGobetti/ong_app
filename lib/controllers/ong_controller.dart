@@ -29,4 +29,8 @@ class OngController extends ChangeNotifier {
     ong.projectList.removeWhere((Project project) => project.id == projectId,);
     notifyListeners();
   }
+
+  clearOngList(){
+    _ongList.clear();
+  }
 }

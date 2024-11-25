@@ -260,8 +260,4 @@ class _UserFormInputsState extends State<UserFormInputs> {
       default: return OngCategory.arts;
     }
   }
-
 }
-
-//todo criar lista de ongs reais
-//todo update das images e campos normais

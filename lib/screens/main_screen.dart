@@ -38,6 +38,7 @@ class _MainScreenState extends State<MainScreen> {
   getOngList() async {
 
     OngController ongController = Provider.of(context, listen: false);
+    ongController.clearOngList();
     ongList = await databaseController.getAllOngs();
 
     for(dynamic databaseOng in ongList){
@@ -92,7 +93,9 @@ class _MainScreenState extends State<MainScreen> {
         ongCategory: ongCategory,
       );
 
-      ongController.createOng(ong: ong);
+      if(isVerified){
+        ongController.createOng(ong: ong);
+      }
     }
 
 
